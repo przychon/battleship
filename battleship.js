@@ -22,6 +22,9 @@ var view = {
   displayHit: function(location){
     var cell = document.getElementById(location);
     cell.setAttribute("class", "hit");
+    cell.onclick=function() {
+      return false;
+    }
   },
   displayMiss: function(location){
     var cell = document.getElementById(location);
